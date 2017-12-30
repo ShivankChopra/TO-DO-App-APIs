@@ -2,7 +2,7 @@ package TodoApp.Domain;
 
 public class Task{
 	
-	private String taskId;
+	private int taskId;
 	private String taskName;
 	private String isDone;
 	private String createdAt;
@@ -10,19 +10,19 @@ public class Task{
 	 
 	public Task(){}
 
-	public Task(String taskId, String taskName, String isDone/*, String createdAt, String doneAt*/) {
+	public Task(int taskId, String taskName, String isDone, String createdAt, String doneAt) {
 		this.taskId = taskId;
 		this.taskName = taskName;
 		this.isDone = isDone;
-		/*this.createdAt = createdAt;
-		this.doneAt = doneAt;*/
+		this.createdAt = createdAt;
+		this.doneAt = doneAt;
 	}
 
-	public String getTaskId() {
+	public int getTaskId() {
 		return taskId;
 	}
 
-	public void setTaskId(String taskId) {
+	public void setTaskId(int taskId) {
 		this.taskId = taskId;
 	}
 

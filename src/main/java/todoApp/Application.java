@@ -11,6 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @SpringBootApplication
 @PropertySource({"classpath:TodoApp/Application.properties"})
 public class Application extends WebMvcConfigurerAdapter{
+	
 	@Value("${userdb.url}")
 	String url;
 	
