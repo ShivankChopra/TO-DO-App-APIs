@@ -3,7 +3,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>WeddingAsia</groupId>
   <artifactId>TodoApp</artifactId>
-  <!-- packaging>war</packaging> -->
   <version>0.0.1-SNAPSHOT</version>
   <name>TodoApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -19,6 +18,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+    <!--  for jdbc template -->
+    <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+    </dependency>
+        
+     <!-- for mysql support -->   
+	<dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+	</dependency>
     
   </dependencies>
   

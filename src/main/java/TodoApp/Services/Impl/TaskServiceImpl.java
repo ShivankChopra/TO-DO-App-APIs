@@ -2,27 +2,29 @@ package TodoApp.Services.Impl;
 
 import java.util.Collection;
 
-import org.springframework.scheduling.config.Task;
+import org.springframework.beans.factory.annotation.Autowired;
+import TodoApp.Domain.Task;
 import org.springframework.stereotype.Service;
 
+import TodoApp.Dao.TaskDao;
 import TodoApp.Services.TaskService;
 
 @Service
 public class TaskServiceImpl implements TaskService{
+	
+	@Autowired
+	TaskDao td;
 
 	public void AddTask(Task task) {
-		// TODO Auto-generated method stub
-		
+		td.AddTask(task);
 	}
 
 	public void editTask(Task task) {
-		// TODO Auto-generated method stub
-		
+		td.editTask(task);
 	}
 
 	public Collection<Task> getAllTasks() {
-		// TODO Auto-generated method stub
-		return null;
+		return td.getAllTasks();
 	}
 	
 }

@@ -4,18 +4,18 @@ public class Task{
 	
 	private String taskId;
 	private String taskName;
-	private Boolean isDone;
+	private String isDone;
 	private String createdAt;
 	private String doneAt;
 	 
 	public Task(){}
 
-	public Task(String taskId, String taskName, Boolean isDone, String createdAt, String doneAt) {
+	public Task(String taskId, String taskName, String isDone/*, String createdAt, String doneAt*/) {
 		this.taskId = taskId;
 		this.taskName = taskName;
 		this.isDone = isDone;
-		this.createdAt = createdAt;
-		this.doneAt = doneAt;
+		/*this.createdAt = createdAt;
+		this.doneAt = doneAt;*/
 	}
 
 	public String getTaskId() {
@@ -34,11 +34,11 @@ public class Task{
 		this.taskName = taskName;
 	}
 
-	public Boolean getIsDone() {
+	public String getIsDone() {
 		return isDone;
 	}
 
-	public void setIsDone(Boolean isDone) {
+	public void setIsDone(String isDone) {
 		this.isDone = isDone;
 	}
 
